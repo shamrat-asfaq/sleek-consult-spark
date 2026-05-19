@@ -41,21 +41,39 @@ function ContactPage() {
       <section className="py-12 pb-24">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
           <div>
-            <div className="space-y-px bg-hairline border border-hairline">
-              {offices.map((o) => (
-                <div key={o.city} className="bg-noir p-6 flex items-center justify-between">
-                  <div>
-                    <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold mb-1">
-                      {o.role}
-                    </div>
-                    <div className="font-display text-lg text-ink-1">
-                      {o.city}, {o.country}
-                    </div>
-                  </div>
-                  <div className="text-ink-3 text-sm">24/7</div>
-                </div>
-              ))}
+            <div className="border border-hairline bg-noir p-6">
+              <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold mb-2">
+                Headquarters
+              </div>
+              <div className="font-display text-lg text-ink-1 mb-4">
+                Multiple Icon Technologies
+              </div>
+              <p className="text-ink-3 text-sm leading-relaxed whitespace-pre-line">
+                {"House # 37, Road # 18, Block # B\nBanani, Dhaka-1213\nBangladesh"}
+              </p>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${MAP_QUERY}`}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-4 inline-block text-xs font-bold uppercase tracking-widest text-gold hover:text-gold-light"
+              >
+                Open in Google Maps →
+              </a>
             </div>
+
+            <div className="mt-6 border border-hairline overflow-hidden aspect-[4/3]">
+              <iframe
+                title="Multiple Icon Technologies — Headquarters"
+                src={`https://www.google.com/maps?q=${MAP_QUERY}&output=embed`}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+
 
             <div className="mt-12 space-y-4">
               <div className="flex justify-between border-b border-hairline pb-4">
