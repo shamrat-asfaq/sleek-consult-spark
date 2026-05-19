@@ -89,6 +89,22 @@ function ContactPage() {
                 <span className="text-sm text-ink-1">+41 44 000 0000</span>
               </div>
             </div>
+
+            <div className="mt-10 border border-hairline bg-noir p-6">
+              <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold mb-3">
+                Office Hours
+              </div>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-ink-3">Mon – Fri</span>
+                  <span className="text-ink-1">9:00 am – 5:00 pm</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-ink-3">Sat – Sun</span>
+                  <span className="text-ink-1">Closed</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="bg-surface p-10 ring-1 ring-white/5">
