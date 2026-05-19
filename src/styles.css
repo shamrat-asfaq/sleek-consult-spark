@@ -46,16 +46,16 @@
 :root {
   --radius: 0.25rem;
 
-  /* Noir & Gold palette */
-  --noir: oklch(0.16 0 0);         /* #0d0d0d */
-  --surface: oklch(0.21 0 0);      /* #1a1a1a */
-  --surface-2: oklch(0.26 0 0);
-  --gold: oklch(0.76 0.13 85);     /* #c9a84c */
-  --gold-light: oklch(0.88 0.11 88); /* #f0d78c */
-  --hairline: oklch(0.3 0 0 / 50%);
-  --ink-1: oklch(0.96 0 0);
-  --ink-2: oklch(0.72 0 0);
-  --ink-3: oklch(0.55 0 0);
+  /* Amber Cream light palette — matches the logo orange */
+  --noir: oklch(0.98 0.02 75);        /* #fff8ee cream background */
+  --surface: oklch(0.94 0.05 75);     /* #ffe7c7 soft peach surface */
+  --surface-2: oklch(0.90 0.07 70);   /* deeper peach */
+  --gold: oklch(0.72 0.19 50);        /* #ff8a1e logo orange accent */
+  --gold-light: oklch(0.82 0.15 60);  /* lighter glowing orange */
+  --hairline: oklch(0.30 0.05 50 / 18%);
+  --ink-1: oklch(0.22 0.04 50);       /* #2b1d10 espresso */
+  --ink-2: oklch(0.42 0.04 50);
+  --ink-3: oklch(0.58 0.03 50);
 
   --background: var(--noir);
   --foreground: var(--ink-1);
@@ -64,22 +64,22 @@
   --popover: var(--surface);
   --popover-foreground: var(--ink-1);
   --primary: var(--gold);
-  --primary-foreground: var(--noir);
+  --primary-foreground: oklch(0.99 0 0);
   --secondary: var(--surface);
   --secondary-foreground: var(--ink-1);
   --muted: var(--surface);
   --muted-foreground: var(--ink-2);
   --accent: var(--gold);
-  --accent-foreground: var(--noir);
-  --destructive: oklch(0.6 0.22 27);
-  --destructive-foreground: var(--ink-1);
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.99 0 0);
   --border: var(--hairline);
   --input: var(--hairline);
   --ring: var(--gold);
 }
 
 .dark {
-  /* Site is permanently dark; mirror values */
+  /* Site is permanently light; mirror values */
   --background: var(--noir);
   --foreground: var(--ink-1);
 }
