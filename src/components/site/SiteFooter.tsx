@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/logo.png";
 
 export function SiteFooter() {
   return (
@@ -6,7 +7,7 @@ export function SiteFooter() {
       <div className="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-4 gap-12">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-3 mb-6">
-            <div className="size-5 bg-gold" />
+            <img src={logo} alt="Multiple Icon Technology" className="h-10 w-auto" />
             <span className="font-display font-semibold text-gold tracking-tight text-sm">
               MULTIPLE ICON TECHNOLOGIES
             </span>
