@@ -21,12 +21,8 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
 });
 
-const offices = [
-  { city: "Zurich", country: "CH", role: "Global Operations Hub" },
-  { city: "Singapore", country: "SG", role: "Technology Forge" },
-  { city: "London", country: "UK", role: "European Engineering Center" },
-  { city: "New York", country: "US", role: "Americas Command" },
-];
+const HQ_ADDRESS = "House # 37, Road # 18, Block # B, Banani, Dhaka-1213";
+const MAP_QUERY = encodeURIComponent(HQ_ADDRESS);
 
 function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
