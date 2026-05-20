@@ -82,6 +82,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Multiple Icon Technologies — Engineering Intelligence" },
+      { name: "twitter:title", content: "Multiple Icon Technologies — Engineering Intelligence" },
+      { name: "description", content: "Elevate Tech Solutions is a modern, elegant website for a tech consultancy." },
+      { property: "og:description", content: "Elevate Tech Solutions is a modern, elegant website for a tech consultancy." },
+      { name: "twitter:description", content: "Elevate Tech Solutions is a modern, elegant website for a tech consultancy." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1009ffb6-d737-4ac5-a87d-2fb5cc6c28d6/id-preview-d240fe5a--67b49a07-9576-4acb-8dac-384d0a121a54.lovable.app-1779301150531.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1009ffb6-d737-4ac5-a87d-2fb5cc6c28d6/id-preview-d240fe5a--67b49a07-9576-4acb-8dac-384d0a121a54.lovable.app-1779301150531.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
